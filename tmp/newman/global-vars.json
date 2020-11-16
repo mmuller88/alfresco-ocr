@@ -1,0 +1,24 @@
+{
+  "id": "94cd5b8d-5612-4b9d-9ac8-fd23d87fc8c0",
+  "values": [
+    {
+      "type": "any",
+      "value": "948a61cb-5cdd-470a-84f4-e25c6e65fd20",
+      "key": "nodeId"
+    },
+    {
+      "type": "any",
+      "value": "99669a98-019e-4481-a97a-cdb96ee2e7b1",
+      "key": "korrespondenzNode"
+    },
+    {
+      "type": "any",
+      "value": "2f9a73f1-bb09-43e6-8676-fc97520d80ac",
+      "key": "interneRechnungNode"
+    }
+  ],
+  "name": "globals",
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2020-11-12T10:39:49.965Z",
+  "_postman_exported_using": "Newman/5.2.1"
+}
