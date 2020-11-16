@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="unimed:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+   <description>Unimed Document Model</description>
+   <author>Martin Mueller (damadden88@googlemail.com)</author>
+   <version>1.0</version>
+
+   <imports>
+       <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+       <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+       <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+   </imports>
+
+   <namespaces>
+       <namespace uri="http://www.unimed.de/model/content/1.0" prefix="unimed"/>
+   </namespaces>
+
+   <types>
+        <type name="unimed:korrespondenz">
+            <title>Korrespondenz Dokument Typ</title>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="unimed:rechnungsNummer">
+                    <title>Rechnungsnummer</title>
+                    <type>d:text</type>
+                </property>
+            </properties>
+            <mandatory-aspects>
+                <aspect>unimed:briefAspekt</aspect>
+            </mandatory-aspects>
+        </type>
+        <type name="unimed:interneRechnung">
+            <title>Interne Rechnung Dokument Typ</title>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="unimed:rechnungsbetrag">
+                    <title>Rechnungsbetrag</title>
+                    <type>d:float</type>
+                </property>
+            </properties>
+            <mandatory-aspects>
+                <aspect>unimed:briefAspekt</aspect>
+            </mandatory-aspects>
+        </type>
+   </types>
+
+    <aspects>
+        <aspect name="unimed:briefAspekt">
+            <title>Briefinformationen</title>
+            <description>Alle Daten die gleich sind zwischen den Typen</description>
+            <properties>
+                <property name="unimed:briefDatum">
+                    <title>Briefdatum</title>
+                    <type>d:date</type>
+                </property>
+                <property name="unimed:bearbeiter">
+                    <title>Bearbeiter</title>
+                    <type>d:text</type>
+            </property>
+            </properties>
+            <!-- <associations>
+                <child-association name="unimed:bearbeiter">
+                    <source>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </source>
+                    <target>
+                        <class>cm:person</class>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </target>
+                    <duplicate>false</duplicate>
+                    <propagateTimestamps>false</propagateTimestamps>
+                </child-association>
+        </associations> -->
+       </aspect>
+   </aspects>
+</model>
