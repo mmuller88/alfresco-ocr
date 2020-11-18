@@ -46,7 +46,6 @@ jspm_packages/
 !/.versionrc.json
 !/test
 !/.github/workflows/build.yml
-!/.github/workflows/release.yml
 !/.mergify.yml
 !/.github/dependabot.yml
 !/.github/pull_request_template.md
