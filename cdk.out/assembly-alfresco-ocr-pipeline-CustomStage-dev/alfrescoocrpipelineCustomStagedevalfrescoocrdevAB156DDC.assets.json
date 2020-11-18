@@ -1,0 +1,20 @@
+{
+  "version": "7.0.0",
+  "files": {
+    "d7e8f141ea492c5e7bab06898d237c919b7c3345a03aabd0b176f49b4c9e7ec8": {
+      "source": {
+        "path": "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "981237193288-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-981237193288-eu-central-1",
+          "objectKey": "d7e8f141ea492c5e7bab06898d237c919b7c3345a03aabd0b176f49b4c9e7ec8",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-file-publishing-role-981237193288-eu-central-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

@@ -1,0 +1,34 @@
+{
+  "version": "7.0.0",
+  "files": {
+    "392e2627a26f124347194605f96c8ed33d4552afcc2339b700ce6d6ce351eac1": {
+      "source": {
+        "path": "asset.392e2627a26f124347194605f96c8ed33d4552afcc2339b700ce6d6ce351eac1",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "981237193288-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-981237193288-eu-central-1",
+          "objectKey": "392e2627a26f124347194605f96c8ed33d4552afcc2339b700ce6d6ce351eac1.zip",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-file-publishing-role-981237193288-eu-central-1"
+        }
+      }
+    },
+    "f00898ae5f4d02fd6ddef8ab2f29b72ac96138c144586d0c24bba8d2d2d3975b": {
+      "source": {
+        "path": "alfresco-ocr-pipeline.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "981237193288-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-981237193288-eu-central-1",
+          "objectKey": "f00898ae5f4d02fd6ddef8ab2f29b72ac96138c144586d0c24bba8d2d2d3975b",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-file-publishing-role-981237193288-eu-central-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

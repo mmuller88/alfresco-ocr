@@ -1,0 +1,184 @@
+{
+  "Resources": {
+    "CrossRegionCodePipelineReplicationBucketEncryptionKey70216490": {
+      "Type": "AWS::KMS::Key",
+      "Properties": {
+        "KeyPolicy": {
+          "Statement": [
+            {
+              "Action": [
+                "kms:Create*",
+                "kms:Describe*",
+                "kms:Enable*",
+                "kms:List*",
+                "kms:Put*",
+                "kms:Update*",
+                "kms:Revoke*",
+                "kms:Disable*",
+                "kms:Get*",
+                "kms:Delete*",
+                "kms:ScheduleKeyDeletion",
+                "kms:CancelKeyDeletion",
+                "kms:GenerateDataKey",
+                "kms:TagResource",
+                "kms:UntagResource"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::981237193288:root"
+                    ]
+                  ]
+                }
+              },
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::981237193288:root"
+                    ]
+                  ]
+                }
+              },
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::981237193288:role/cdk-hnb659fds-deploy-role-981237193288-us-east-1"
+                    ]
+                  ]
+                }
+              },
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::981237193288:role/cdk-hnb659fds-deploy-role-981237193288-us-east-1"
+                    ]
+                  ]
+                }
+              },
+              "Resource": "*"
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "cross-region-stack-981237193288:us-east-1/Default/CrossRegionCodePipelineReplicationBucketEncryptionKey/Resource"
+      }
+    },
+    "CrossRegionCodePipelineReplicationBucketEncryptionAliasF1A0F37D": {
+      "Type": "AWS::KMS::Alias",
+      "Properties": {
+        "AliasName": "alias/line-suptencryptionaliascc2b482ba8ca35cf0177",
+        "TargetKeyId": {
+          "Fn::GetAtt": [
+            "CrossRegionCodePipelineReplicationBucketEncryptionKey70216490",
+            "Arn"
+          ]
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "cross-region-stack-981237193288:us-east-1/Default/CrossRegionCodePipelineReplicationBucketEncryptionAlias/Resource"
+      }
+    },
+    "CrossRegionCodePipelineReplicationBucketFC3227F2": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "KMSMasterKeyID": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":kms:us-east-1:981237193288:alias/line-suptencryptionaliascc2b482ba8ca35cf0177"
+                    ]
+                  ]
+                },
+                "SSEAlgorithm": "aws:kms"
+              }
+            }
+          ]
+        },
+        "BucketName": "alfresco-ocr-pipeline-supeplicationbucketd6dadffd77a48cd511ac"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "cross-region-stack-981237193288:us-east-1/Default/CrossRegionCodePipelineReplicationBucket/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Modules": "aws-cdk=1.73.0,@aws-cdk/assets=1.73.0,@aws-cdk/aws-applicationautoscaling=1.73.0,@aws-cdk/aws-autoscaling=1.73.0,@aws-cdk/aws-autoscaling-common=1.73.0,@aws-cdk/aws-autoscaling-hooktargets=1.73.0,@aws-cdk/aws-cloudformation=1.73.0,@aws-cdk/aws-cloudwatch=1.73.0,@aws-cdk/aws-codebuild=1.73.0,@aws-cdk/aws-codeguruprofiler=1.73.0,@aws-cdk/aws-codepipeline=1.73.0,@aws-cdk/aws-codepipeline-actions=1.73.0,@aws-cdk/aws-ec2=1.73.0,@aws-cdk/aws-ecr=1.73.0,@aws-cdk/aws-ecr-assets=1.73.0,@aws-cdk/aws-ecs=1.73.0,@aws-cdk/aws-elasticloadbalancingv2=1.73.0,@aws-cdk/aws-elasticloadbalancingv2-targets=1.73.0,@aws-cdk/aws-events=1.73.0,@aws-cdk/aws-events-targets=1.73.0,@aws-cdk/aws-iam=1.73.0,@aws-cdk/aws-kms=1.73.0,@aws-cdk/aws-lambda=1.73.0,@aws-cdk/aws-logs=1.73.0,@aws-cdk/aws-route53=1.73.0,@aws-cdk/aws-route53-targets=1.73.0,@aws-cdk/aws-s3=1.73.0,@aws-cdk/aws-s3-assets=1.73.0,@aws-cdk/aws-servicediscovery=1.73.0,@aws-cdk/aws-sns=1.73.0,@aws-cdk/aws-sns-subscriptions=1.73.0,@aws-cdk/aws-sqs=1.73.0,@aws-cdk/aws-ssm=1.73.0,@aws-cdk/cloud-assembly-schema=1.73.0,@aws-cdk/core=1.73.0,@aws-cdk/custom-resources=1.73.0,@aws-cdk/cx-api=1.73.0,@aws-cdk/pipelines=1.73.0,@aws-cdk/region-info=1.73.0,jsii-runtime=node.js/v14.15.0"
+      },
+      "Metadata": {
+        "aws:cdk:path": "cross-region-stack-981237193288:us-east-1/CDKMetadata/Default"
+      }
+    }
+  }
+}

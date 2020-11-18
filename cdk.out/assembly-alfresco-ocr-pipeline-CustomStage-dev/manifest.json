@@ -1,0 +1,847 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC.assets.json",
+        "requiresBootstrapStackVersion": 4
+      }
+    },
+    "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://981237193288/eu-central-1",
+      "properties": {
+        "templateFile": "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC.template.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-deploy-role-981237193288-eu-central-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-cfn-exec-role-981237193288-eu-central-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-981237193288-eu-central-1/d7e8f141ea492c5e7bab06898d237c919b7c3345a03aabd0b176f49b4c9e7ec8",
+        "requiresBootstrapStackVersion": 4,
+        "additionalDependencies": [
+          "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC.assets"
+        ],
+        "stackName": "itest123"
+      },
+      "dependencies": [
+        "alfrescoocrpipelineCustomStagedevalfrescoocrdevAB156DDC.assets"
+      ],
+      "metadata": {
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCB9E5F0B4",
+            "trace": [
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1190:21)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet1SubnetBB7FDF67",
+            "trace": [
+              "new Subnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1518:20)",
+              "new PublicSubnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1732:5)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1370:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1352:28)",
+              "Vpc.createSubnets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1341:12)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1219:10)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet1RouteTableEEF02A64",
+            "trace": [
+              "new Subnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1535:19)",
+              "new PublicSubnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1732:5)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1370:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1352:28)",
+              "Vpc.createSubnets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1341:12)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1219:10)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet1RouteTableAssociation7700457B",
+            "trace": [
+              "new Subnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1541:5)",
+              "new PublicSubnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1732:5)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1370:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1352:28)",
+              "Vpc.createSubnets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1341:12)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1219:10)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet1DefaultRouteC1C9D77C",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1557:19)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1237:46)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet2SubnetE30F0091",
+            "trace": [
+              "new Subnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1518:20)",
+              "new PublicSubnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1732:5)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1370:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1352:28)",
+              "Vpc.createSubnets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1341:12)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1219:10)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet2RouteTable8565F2D0",
+            "trace": [
+              "new Subnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1535:19)",
+              "new PublicSubnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1732:5)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1370:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1352:28)",
+              "Vpc.createSubnets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1341:12)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1219:10)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet2RouteTableAssociation35C35494",
+            "trace": [
+              "new Subnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1541:5)",
+              "new PublicSubnet (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1732:5)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1370:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1352:28)",
+              "Vpc.createSubnets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1341:12)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1219:10)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/ingressSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCingressSubnet2DefaultRoute8E2F45A7",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1557:19)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1238:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1237:46)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCIGWB7E252D3",
+            "trace": [
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1226:19)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/VPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCVPCGW99B986DC",
+            "trace": [
+              "new Vpc (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1232:19)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:86:23)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/alfSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "alfSecurityGroup43222B26",
+            "trace": [
+              "new SecurityGroup (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:395:26)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:107:27)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/AlfCdkEc2Instance/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlfCdkEc2InstanceInstanceRoleE6EC18DC",
+            "trace": [
+              "new Role (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Instance (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:315:31)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:128:22)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/AlfCdkEc2Instance/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlfCdkEc2InstanceInstanceProfile4C9A7F16",
+            "trace": [
+              "new Instance (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:320:24)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:128:22)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/AlfCdkEc2Instance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AlfCdkEc2InstanceFF870B17",
+            "trace": [
+              "new Instance (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:355:21)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:128:22)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:328:9)",
+              "Function.valueForTypedStringParameter (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:398:17)",
+              "AmazonLinuxImage.getImage (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/machine-image.ts:140:37)",
+              "new Instance (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-ec2/lib/instance.ts:325:44)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:128:22)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LB8A12904C",
+            "trace": [
+              "new BaseLoadBalancer (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.ts:208:22)",
+              "new ApplicationLoadBalancer (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:84:5)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:130:16)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/LB/Listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBListener49E825B4",
+            "trace": [
+              "new BaseListener (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.ts:109:22)",
+              "new ApplicationListener (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:191:5)",
+              "ApplicationLoadBalancer.addListener (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:106:12)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:161:21)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/LB/Listener/TargetGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBListenerTargetGroupF04FCF6D",
+            "trace": [
+              "new TargetGroupBase (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.ts:237:21)",
+              "new ApplicationTargetGroup (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:94:5)",
+              "ApplicationListener.addTargets (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:359:19)",
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:167:14)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/InstanceId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstanceId",
+            "trace": [
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:173:24)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/InstancePublicDnsName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstancePublicDnsName",
+            "trace": [
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:178:35)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/LoadBalancerDnsName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoadBalancerDnsName",
+            "trace": [
+              "new AlfEc2Stack (/home/martin/git/alfresco-ocr/cdk/alf-ec2-stack.ts:183:33)",
+              "CustomStage.customStack (/home/martin/git/alfresco-ocr/cdk/app.ts:38:12)",
+              "new CustomStage (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/custom-stage.ts:21:43)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:91:27)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "CustomStage.synth (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "CdkStage.addApplication (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/pipelines/lib/stage.ts:78:26)",
+              "CdkPipeline.addApplicationStage (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/pipelines/lib/pipeline.ts:249:11)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:109:40)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:506:17)",
+              "DefaultStackSynthesizer.synthesize (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:336:7)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:29",
+              "visit (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "synthesizeTree (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:150:3)",
+              "Object.synthesize (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:39:3)",
+              "CustomStage.synth (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "CdkStage.addApplication (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/pipelines/lib/stage.ts:78:26)",
+              "CdkPipeline.addApplicationStage (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/pipelines/lib/pipeline.ts:249:11)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:109:40)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/alfresco-ocr-pipeline/CustomStage-dev/alfresco-ocr-dev/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:516:3)",
+              "DefaultStackSynthesizer.synthesize (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:336:7)",
+              "/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:29",
+              "visit (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "synthesizeTree (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:150:3)",
+              "Object.synthesize (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/private/synthesis.ts:39:3)",
+              "CustomStage.synth (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "CdkStage.addApplication (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/pipelines/lib/stage.ts:78:26)",
+              "CdkPipeline.addApplicationStage (/home/martin/git/alfresco-ocr/node_modules/@aws-cdk/pipelines/lib/pipeline.ts:249:11)",
+              "new PipelineStack (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-stack.ts:109:40)",
+              "new PipelineApp (/home/martin/git/alfresco-ocr/node_modules/cdk-pipeline-app/pipeline-app.ts:59:5)",
+              "Object.<anonymous> (/home/martin/git/alfresco-ocr/cdk/app.ts:56:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1043:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/index.ts:1046:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:225:14)",
+              "Object.<anonymous> (/home/martin/.npm/_npx/466846/lib/node_modules/ts-node/src/bin.ts:512:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

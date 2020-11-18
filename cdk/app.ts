@@ -40,7 +40,7 @@ const pipelineAppProps: PipelineAppProps = {
         account: stageAccount.account.id,
         region: stageAccount.account.region,
       },
-      gitRepo: process.env.gitRepo || "alf-cdk-ec2",
+      gitRepo: process.env.gitRepo || "alfresco-ocr",
       stackName: process.env.stackName || `itest123`,
       stage: stageAccount.stage,
     });
