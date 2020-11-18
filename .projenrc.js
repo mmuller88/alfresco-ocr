@@ -1,8 +1,11 @@
 const { TypeScriptProject } = require('projen');
 
-const devDeps = {
-  "prettier": "^2.1.2",
+const dependencies = {
   'cdk-pipeline-app': 'github:mmuller88/cdk-pipeline-app#master',
+}
+
+const devDependencies = {
+  "prettier": "^2.1.2",
 };
 
 const name = 'alfresco-ocr';
@@ -19,7 +22,8 @@ const project = new TypeScriptProject({
     "ocr",
   ],
   releaseWorkflow: false,
-  devDependencies: devDeps,                    
+  dependencies: dependencies,
+  devDependencies: devDependencies,                    
 });
 
 const stage = '${STAGE:-dev}';
