@@ -37,6 +37,9 @@ while [[ $1 == -* ]]; do
   esac
 done
 
+docker volume create --name=ocr-input
+docker volume create --name=ocr-output
+
 echo "Start docker compose"
 docker-compose up -d --build
 
@@ -49,7 +52,3 @@ if [[ $WAIT_TIME -gt 0 ]]; then
     exit 1
   fi
 fi
-
-# Erstelle User alice und bob. Falls User schon existiert gibs nen 409 zurück
-# 
-npx newman run postman/init_collection.json -r cli,json --reporter-json-export tmp/newman/report.json --export-environment tmp/newman/env-vars.json --export-globals tmp/newman/global-vars.json
