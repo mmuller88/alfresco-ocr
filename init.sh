@@ -18,4 +18,4 @@ nvm install node
 ln -s /usr/bin/nodejs /usr/bin/node
 node -e "console.log('Running Node.js ' + process.version)"
 # npm install
-npm i -g npx
+# npm i -g npx

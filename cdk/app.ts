@@ -46,7 +46,7 @@ const pipelineAppProps: PipelineAppProps = {
     });
   },
   testCommands: (stageAccount) => [
-    `sleep 180
+    `sleep 240
     curl -Ssf $InstancePublicDnsName; RESULT=$?; aws ec2 get-console-output --instance-id $InstanceId --region ${stageAccount.account.region} --output text
     aws cloudformation delete-stack --stack-name itest123 --region ${stageAccount.account.region}
     exit $RESULT`,
