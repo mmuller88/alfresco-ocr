@@ -1,7 +1,7 @@
 {
   "version": "7.0.0",
   "files": {
-    "c1131c0498ed503265060e78cb86844999342a9377e439a8201af2ff84e86660": {
+    "c1fa540101c3faef4b07551f289e48f0c3f71be1c36938a005edb2b7eb120027": {
       "source": {
         "path": "alfrescoocrpipelineCustomStageprodalfrescoocrprodFDDBCBFA.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "981237193288-us-east-1": {
           "bucketName": "cdk-hnb659fds-assets-981237193288-us-east-1",
-          "objectKey": "c1131c0498ed503265060e78cb86844999342a9377e439a8201af2ff84e86660",
+          "objectKey": "c1fa540101c3faef4b07551f289e48f0c3f71be1c36938a005edb2b7eb120027",
           "region": "us-east-1",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-file-publishing-role-981237193288-us-east-1"
         }

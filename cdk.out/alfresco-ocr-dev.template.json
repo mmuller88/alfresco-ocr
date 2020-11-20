@@ -215,10 +215,10 @@
         "SecurityGroupIngress": [
           {
             "CidrIp": "0.0.0.0/0",
-            "Description": "from 0.0.0.0/0:80",
-            "FromPort": 80,
+            "Description": "from 0.0.0.0/0:8080",
+            "FromPort": 8080,
             "IpProtocol": "tcp",
-            "ToPort": 80
+            "ToPort": 8080
           },
           {
             "CidrIp": "0.0.0.0/0",
@@ -305,7 +305,7 @@
           }
         ],
         "UserData": {
-          "Fn::Base64": "Content-Type: multipart/mixed; boundary=\"//\"\nMIME-Version: 1.0\n\n--//\nContent-Type: text/cloud-config; charset=\"us-ascii\"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\nContent-Disposition: attachment; filename=\"cloud-config.txt\"\n\n#cloud-config\ncloud_final_modules:\n- [scripts-user, always]\n\n--//\nContent-Type: text/x-shellscript; charset=\"us-ascii\"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\nContent-Disposition: attachment; filename=\"userdata.txt\"\n\n#!/bin/bash\necho \"sudo halt\" | at now + 55 minutes\nyum -y install git\nREPO=alf-cdk-ec2\ngit clone https://@github.com/mmuller88/$REPO /usr/local/$REPO\ncd /usr/local/$REPO\nchmod +x init.sh && ./init.sh\nsudo chmod +x start.sh && ./start.sh\n--//\n  "
+          "Fn::Base64": "Content-Type: multipart/mixed; boundary=\"//\"\nMIME-Version: 1.0\n\n--//\nContent-Type: text/cloud-config; charset=\"us-ascii\"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\nContent-Disposition: attachment; filename=\"cloud-config.txt\"\n\n#cloud-config\ncloud_final_modules:\n- [scripts-user, always]\n\n--//\nContent-Type: text/x-shellscript; charset=\"us-ascii\"\nMIME-Version: 1.0\nContent-Transfer-Encoding: 7bit\nContent-Disposition: attachment; filename=\"userdata.txt\"\n\n#!/bin/bash\necho \"sudo halt\" | at now + 55 minutes\nyum -y install git\nREPO=alfresco-ocr\ngit clone https://@github.com/mmuller88/$REPO /usr/local/$REPO\ncd /usr/local/$REPO\nchmod +x init.sh && ./init.sh\nsudo chmod +x start.sh && ./start.sh\nsudo chown -R 33007 data/solr-data\nsudo chown -R 999 logs\n--//\n  "
         }
       },
       "DependsOn": [
@@ -365,7 +365,7 @@
         "LoadBalancerArn": {
           "Ref": "LB8A12904C"
         },
-        "Port": 80,
+        "Port": 8080,
         "Protocol": "HTTP"
       },
       "Metadata": {
@@ -375,7 +375,7 @@
     "LBListenerTargetGroupF04FCF6D": {
       "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
       "Properties": {
-        "Port": 80,
+        "Port": 8080,
         "Protocol": "HTTP",
         "Targets": [
           {
@@ -422,9 +422,17 @@
     },
     "InstancePublicDnsName": {
       "Value": {
-        "Fn::GetAtt": [
-          "AlfCdkEc2InstanceFF870B17",
-          "PublicDnsName"
+        "Fn::Join": [
+          "",
+          [
+            {
+              "Fn::GetAtt": [
+                "AlfCdkEc2InstanceFF870B17",
+                "PublicDnsName"
+              ]
+            },
+            ":8080"
+          ]
         ]
       }
     },

@@ -56,3 +56,25 @@ Example Solr queries:
 You can run the Docker Compose Deploy in an EC2 instance in AWS. I made that process very easy. I use AWS CDK to deploy an Ec2 Instance through CodePipeline. For more details look in the **cdk** folder.
 
 To run the Ec2 Instance with you AWS Credentials you need to adjust the AWS profile in **.projenrc.js** .
+
+## Deploy DEV Ec2 Stack
+
+To deploy the Ec2 Alfresco Stack on Dev do
+
+```
+yarn run cdkdeploy
+```
+
+To deploy to other stages like Prod do
+
+```
+STAGE=prod yarn run cdkdeploy
+```
+
+## Deploy CDK Pipeline
+
+To create the CDK Pipeline do:
+
+```
+yarn run cdkpipelinedeploy
+```

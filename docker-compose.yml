@@ -132,7 +132,7 @@ services:
             SHARE_TAG: ${SHARE_TAG}
             SERVER_NAME: ${SERVER_NAME}
         # mem_limit: 1600m
-        mem_limit: 256m
+        mem_limit: 512m
         environment:
             REPO_HOST: "alfresco"
             REPO_PORT: "8080"
@@ -164,7 +164,6 @@ services:
         volumes: 
             - ./data/postgres-data:/var/lib/postgresql/data
             # - ./logs/postgres:/var/log/postgresql  
-     
 
     solr6:
         build:
@@ -176,7 +175,7 @@ services:
             ALFRESCO_COMMS: none
             CROSS_LOCALE: "true"
         # mem_limit: 3200m
-        mem_limit: 1000m
+        mem_limit: 2000m
         environment:
             #Solr needs to know how to register itself with Alfresco
             SOLR_ALFRESCO_HOST: "alfresco"
@@ -192,7 +191,7 @@ services:
                 -XX:MaxNewSize=1344m
             "
         # volumes: 
-            # - ./data/solr-data:/opt/alfresco-search-services/data  
+        #     - ./data/solr-data:/opt/alfresco-search-services/data  
 
     activemq:
         image: alfresco/alfresco-activemq:${ACTIVEMQ_TAG}

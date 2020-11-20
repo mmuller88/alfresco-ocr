@@ -80,6 +80,8 @@ git clone https://@github.com/mmuller88/$REPO /usr/local/$REPO
 cd /usr/local/$REPO
 chmod +x init.sh && ./init.sh
 sudo chmod +x start.sh && ./start.sh
+sudo chown -R 33007 data/solr-data
+sudo chown -R 999 logs
 --//
   `;
 
@@ -109,7 +111,9 @@ sudo chmod +x start.sh && ./start.sh
       securityGroupName: `secg-${props.stackName}`,
     });
 
-    securityGroup.addIngressRule(Peer.anyIpv4(), Port.tcp(80));
+    const acsPort = 8080;
+
+    securityGroup.addIngressRule(Peer.anyIpv4(), Port.tcp(acsPort));
     securityGroup.addIngressRule(Peer.anyIpv4(), Port.tcp(22));
 
     const instanceProps: InstanceProps = {
@@ -160,14 +164,14 @@ sudo chmod +x start.sh && ./start.sh
     } else {
       listener = lb.addListener("Listener", {
         protocol: ApplicationProtocol.HTTP,
-        port: 80,
+        port: acsPort,
       });
     }
 
     listener.addTargets("Target", {
       targets: [new InstanceIdTarget(instance.instanceId)],
       protocol: ApplicationProtocol.HTTP,
-      port: 80,
+      port: acsPort,
     });
 
     const instanceId = new CfnOutput(this, "InstanceId", {
@@ -176,7 +180,7 @@ sudo chmod +x start.sh && ./start.sh
     this.cfnOutputs["InstanceId"] = instanceId;
 
     const instancePublicDnsName = new CfnOutput(this, "InstancePublicDnsName", {
-      value: instance.instancePublicDnsName,
+      value: `${instance.instancePublicDnsName}:${acsPort}`,
     });
     this.cfnOutputs["InstancePublicDnsName"] = instancePublicDnsName;
 

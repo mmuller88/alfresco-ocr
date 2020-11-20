@@ -15,7 +15,7 @@
         }
       }
     },
-    "f00898ae5f4d02fd6ddef8ab2f29b72ac96138c144586d0c24bba8d2d2d3975b": {
+    "04e46972e95bf59a36a3592dfa8b19d3aa8c60e354858d002cd7ebf2b38e965c": {
       "source": {
         "path": "alfresco-ocr-pipeline.template.json",
         "packaging": "file"
@@ -23,7 +23,7 @@
       "destinations": {
         "981237193288-eu-central-1": {
           "bucketName": "cdk-hnb659fds-assets-981237193288-eu-central-1",
-          "objectKey": "f00898ae5f4d02fd6ddef8ab2f29b72ac96138c144586d0c24bba8d2d2d3975b",
+          "objectKey": "04e46972e95bf59a36a3592dfa8b19d3aa8c60e354858d002cd7ebf2b38e965c",
           "region": "eu-central-1",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-file-publishing-role-981237193288-eu-central-1"
         }
