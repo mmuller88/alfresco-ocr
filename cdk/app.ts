@@ -51,16 +51,21 @@ const pipelineAppProps: PipelineAppProps = {
     });
   },
   manualApprovals: (stageAccount) => stageAccount.stage === "prod",
-  testCommands: (stageAccount) =>
-    stageAccount.stage === "dev"
-      ? [
-          `sleep 240
-    curl -Ssf $InstancePublicDnsName; RESULT=$? || aws ec2 get-console-output --instance-id $InstanceId --region ${stageAccount.account.region} --output text
-    aws cloudformation delete-stack --stack-name alf-ocr-${stageAccount.stage} --region ${stageAccount.account.region}
+  testCommands: (stageAccount) => [
+    "sleep 240",
+    `curl -Ssf $InstancePublicDnsName; RESULT=$? || aws ec2 get-console-output --instance-id $InstanceId --region ${
+      stageAccount.account.region
+    } --output text
+    ${
+      stageAccount.stage === "dev"
+        ? `aws cloudformation delete-stack --stack-name alf-ocr-${stageAccount.stage} --region stageAccount.account.region}`
+        : ""
+    }
     exit $RESULT`,
-        ]
-      : [],
+  ],
 };
+
+//     aws cloudformation delete-stack --stack-name alf-ocr-${stageAccount.stage} --region stageAccount.account.region}
 
 // tslint:disable-next-line: no-unused-expression
 new PipelineApp(pipelineAppProps);
