@@ -55,7 +55,7 @@ const pipelineAppProps: PipelineAppProps = {
     stageAccount.stage === "dev"
       ? [
           `sleep 240
-    curl -Ssf $InstancePublicDnsName; RESULT=$?; aws ec2 get-console-output --instance-id $InstanceId --region ${stageAccount.account.region} --output text
+    curl -Ssf $InstancePublicDnsName; RESULT=$? || aws ec2 get-console-output --instance-id $InstanceId --region ${stageAccount.account.region} --output text
     aws cloudformation delete-stack --stack-name alf-ocr-${stageAccount.stage} --region ${stageAccount.account.region}
     exit $RESULT`,
         ]
