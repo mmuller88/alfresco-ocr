@@ -50,6 +50,7 @@ const pipelineAppProps: PipelineAppProps = {
       stage: stageAccount.stage,
     });
   },
+  manualApprovals: (stageAccount) => stageAccount.stage === "prod",
   testCommands: (stageAccount) =>
     stageAccount.stage === "dev"
       ? [
