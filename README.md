@@ -59,11 +59,13 @@ To run the Ec2 Instance with you AWS Credentials you need to adjust the AWS prof
 
 ## Deploy DEV Ec2 Stack
 
-To deploy the Ec2 Alfresco Stack on Dev do
+To deploy the Ec2 Alfresco Stack on Dev do:
 
 ```
 yarn run cdkdeploy
 ```
+
+After the command a Cloudformation Stack will be created with an EC2 machine and Alfresco with OCR installed.
 
 To deploy to other stages like Prod do
 

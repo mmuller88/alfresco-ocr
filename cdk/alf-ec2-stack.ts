@@ -31,10 +31,7 @@ export interface AlfEc2StackProps extends StackProps {
   gitRepo?: string;
   stage: string;
   stackName: string;
-  // tags?: string[];
-  // lb?: {
-  //   certArn: string
-  // },
+  instanceType?: InstanceType;
   customDomain?: {
     hostedZoneId: string;
     domainName: string;
@@ -118,7 +115,9 @@ sudo chown -R 999 logs
 
     const instanceProps: InstanceProps = {
       machineImage: amznLinux,
-      instanceType: InstanceType.of(InstanceClass.T2, InstanceSize.LARGE),
+      instanceType: props.instanceType
+        ? props.instanceType
+        : InstanceType.of(InstanceClass.T2, InstanceSize.LARGE),
       keyName: "ec2dev",
       instanceName: props.stackName || "AlfrescoOcrInstance",
       vpc: instanceVpc,
