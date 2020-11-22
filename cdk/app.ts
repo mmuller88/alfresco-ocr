@@ -52,15 +52,16 @@ const pipelineAppProps: PipelineAppProps = {
   },
   manualApprovals: (stageAccount) => stageAccount.stage === "prod",
   testCommands: (stageAccount) => [
-    "sleep 240",
-    `curl -Ssf $InstancePublicDnsName; RESULT=$? || aws ec2 get-console-output --instance-id $InstanceId --region ${
-      stageAccount.account.region
-    } --output text
+    "sleep 300",
+    `curl -Ssf $InstancePublicDnsName; RESULT=$?
     ${
       stageAccount.stage === "dev"
-        ? `aws cloudformation delete-stack --stack-name alf-ocr-${stageAccount.stage} --region stageAccount.account.region}`
+        ? `aws cloudformation delete-stack --stack-name alf-ocr-${stageAccount.stage} --region ${stageAccount.account.region}`
         : ""
     }
+    if [ $RESULT -ne 0 ]; then aws ec2 get-console-output --instance-id $InstanceId --region ${
+      stageAccount.account.region
+    } --output text; fi
     exit $RESULT`,
   ],
 };

@@ -1,7 +1,7 @@
 {
   "version": "7.0.0",
   "files": {
-    "521905d7d61afbb276d1fd1ac6dc5f79c515fa4a400ef5ae11bba1c42177f4b5": {
+    "7b6af50f4994dc1f145cf5af782a395d3238db221ea742641bba588f69c8888d": {
       "source": {
         "path": "alfresco-ocr-dev.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "981237193288-eu-central-1": {
           "bucketName": "cdk-hnb659fds-assets-981237193288-eu-central-1",
-          "objectKey": "521905d7d61afbb276d1fd1ac6dc5f79c515fa4a400ef5ae11bba1c42177f4b5",
+          "objectKey": "7b6af50f4994dc1f145cf5af782a395d3238db221ea742641bba588f69c8888d",
           "region": "eu-central-1",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::981237193288:role/cdk-hnb659fds-file-publishing-role-981237193288-eu-central-1"
         }

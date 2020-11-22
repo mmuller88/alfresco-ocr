@@ -204,7 +204,7 @@
       "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
         "GroupDescription": "alfresco-ocr-pipeline/CustomStage-prod/alfresco-ocr-prod/alfSecurityGroup",
-        "GroupName": "secg-itest123",
+        "GroupName": "secg-alf-ocr-prod",
         "SecurityGroupEgress": [
           {
             "CidrIp": "0.0.0.0/0",
@@ -254,7 +254,7 @@
         "Tags": [
           {
             "Key": "Name",
-            "Value": "itest123"
+            "Value": "alf-ocr-prod"
           }
         ]
       },
@@ -285,7 +285,7 @@
         "ImageId": {
           "Ref": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
         },
-        "InstanceType": "t2.large",
+        "InstanceType": "t2.xlarge",
         "KeyName": "ec2dev",
         "SecurityGroupIds": [
           {
@@ -301,7 +301,7 @@
         "Tags": [
           {
             "Key": "Name",
-            "Value": "itest123"
+            "Value": "alf-ocr-prod"
           }
         ],
         "UserData": {
@@ -396,7 +396,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Modules": "aws-cdk=1.73.0,@aws-cdk/assets=1.73.0,@aws-cdk/aws-applicationautoscaling=1.73.0,@aws-cdk/aws-autoscaling=1.73.0,@aws-cdk/aws-autoscaling-common=1.73.0,@aws-cdk/aws-autoscaling-hooktargets=1.73.0,@aws-cdk/aws-cloudformation=1.73.0,@aws-cdk/aws-cloudwatch=1.73.0,@aws-cdk/aws-codebuild=1.73.0,@aws-cdk/aws-codeguruprofiler=1.73.0,@aws-cdk/aws-codepipeline=1.73.0,@aws-cdk/aws-codepipeline-actions=1.73.0,@aws-cdk/aws-ec2=1.73.0,@aws-cdk/aws-ecr=1.73.0,@aws-cdk/aws-ecr-assets=1.73.0,@aws-cdk/aws-ecs=1.73.0,@aws-cdk/aws-elasticloadbalancingv2=1.73.0,@aws-cdk/aws-elasticloadbalancingv2-targets=1.73.0,@aws-cdk/aws-events=1.73.0,@aws-cdk/aws-events-targets=1.73.0,@aws-cdk/aws-iam=1.73.0,@aws-cdk/aws-kms=1.73.0,@aws-cdk/aws-lambda=1.73.0,@aws-cdk/aws-logs=1.73.0,@aws-cdk/aws-route53=1.73.0,@aws-cdk/aws-route53-targets=1.73.0,@aws-cdk/aws-s3=1.73.0,@aws-cdk/aws-s3-assets=1.73.0,@aws-cdk/aws-servicediscovery=1.73.0,@aws-cdk/aws-sns=1.73.0,@aws-cdk/aws-sns-subscriptions=1.73.0,@aws-cdk/aws-sqs=1.73.0,@aws-cdk/aws-ssm=1.73.0,@aws-cdk/cloud-assembly-schema=1.73.0,@aws-cdk/core=1.73.0,@aws-cdk/custom-resources=1.73.0,@aws-cdk/cx-api=1.73.0,@aws-cdk/pipelines=1.73.0,@aws-cdk/region-info=1.73.0,jsii-runtime=node.js/v14.15.0"
+        "Modules": "aws-cdk=1.73.0,@aws-cdk/assets=1.73.0,@aws-cdk/aws-applicationautoscaling=1.73.0,@aws-cdk/aws-autoscaling=1.73.0,@aws-cdk/aws-autoscaling-common=1.73.0,@aws-cdk/aws-autoscaling-hooktargets=1.73.0,@aws-cdk/aws-cloudformation=1.73.0,@aws-cdk/aws-cloudwatch=1.73.0,@aws-cdk/aws-codebuild=1.73.0,@aws-cdk/aws-codeguruprofiler=1.73.0,@aws-cdk/aws-codepipeline=1.73.0,@aws-cdk/aws-codepipeline-actions=1.73.0,@aws-cdk/aws-ec2=1.73.0,@aws-cdk/aws-ecr=1.73.0,@aws-cdk/aws-ecr-assets=1.73.0,@aws-cdk/aws-ecs=1.73.0,@aws-cdk/aws-elasticloadbalancingv2=1.73.0,@aws-cdk/aws-elasticloadbalancingv2-targets=1.73.0,@aws-cdk/aws-events=1.73.0,@aws-cdk/aws-events-targets=1.73.0,@aws-cdk/aws-iam=1.73.0,@aws-cdk/aws-kms=1.73.0,@aws-cdk/aws-lambda=1.73.0,@aws-cdk/aws-logs=1.73.0,@aws-cdk/aws-route53=1.73.0,@aws-cdk/aws-route53-targets=1.73.0,@aws-cdk/aws-s3=1.73.0,@aws-cdk/aws-s3-assets=1.73.0,@aws-cdk/aws-servicediscovery=1.73.0,@aws-cdk/aws-sns=1.73.0,@aws-cdk/aws-sns-subscriptions=1.73.0,@aws-cdk/aws-sqs=1.73.0,@aws-cdk/aws-ssm=1.73.0,@aws-cdk/cloud-assembly-schema=1.73.0,@aws-cdk/core=1.73.0,@aws-cdk/custom-resources=1.73.0,@aws-cdk/cx-api=1.73.0,@aws-cdk/pipelines=1.73.0,@aws-cdk/region-info=1.73.0,jsii-runtime=node.js/v14.15.1"
       },
       "Metadata": {
         "aws:cdk:path": "alfresco-ocr-pipeline/CustomStage-prod/alfresco-ocr-prod/CDKMetadata/Default"
